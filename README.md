@@ -8,3 +8,7 @@ My advent of code solutions made in BaseA (alteryx)
 | Day 2          |     2 |
 | Day 3          |     2 |
 | Day 4          |     2 |
+| Day 5          |     1 |
+| Day 6          |     1 |
+| Day 7          |     1 |
+| Day 9          |     2 |
