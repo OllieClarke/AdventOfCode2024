@@ -1,0 +1,1297 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>iterative</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="19" />
+              <Fields>
+                <Field name="Row" />
+                <Field name="Input" />
+                <Field name="flag" />
+                <Field name="fileId" />
+                <Field name="Max_fileId" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>File</c>
+                  <c>0</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>Space</c>
+                  <c>0</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>File</c>
+                  <c>1</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>Space</c>
+                  <c>1</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>File</c>
+                  <c>2</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>3</c>
+                  <c>Space</c>
+                  <c>2</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>3</c>
+                  <c>File</c>
+                  <c>3</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>1</c>
+                  <c>Space</c>
+                  <c>3</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>2</c>
+                  <c>File</c>
+                  <c>4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>Space</c>
+                  <c>4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>4</c>
+                  <c>File</c>
+                  <c>5</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>1</c>
+                  <c>Space</c>
+                  <c>5</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>4</c>
+                  <c>File</c>
+                  <c>6</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>Space</c>
+                  <c>6</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>3</c>
+                  <c>File</c>
+                  <c>7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>1</c>
+                  <c>Space</c>
+                  <c>7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>4</c>
+                  <c>File</c>
+                  <c>8</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>0</c>
+                  <c>Space</c>
+                  <c>8</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>2</c>
+                  <c>File</c>
+                  <c>9</c>
+                  <c>9</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" source="TextInput:" type="Int32" />
+            <Field name="Input" source="TextInput:" type="Int32" />
+            <Field name="flag" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="306" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>flag</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-16 17:27:28</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>File</Operand>
+              <StartDate>2024-12-16 17:27:28</StartDate>
+              <EndDate>2024-12-16 17:27:28</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[flag] = "File"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[fileId]=([Max_fileId]-[Engine.IterationNumber])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[fileId]=([Max_fileId]-[Engine.IterationNumber])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="498" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Row" selected="True" rename="Source_Row" input="Source_" />
+                <SelectField field="Source_Input" selected="True" rename="Source_Input" input="Source_" />
+                <SelectField field="Source_flag" selected="True" rename="Source_flag" input="Source_" />
+                <SelectField field="Source_fileId" selected="True" rename="Source_fileId" input="Source_" />
+                <SelectField field="Source_Max_fileId" selected="True" rename="Source_Max_fileId" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Source_Input" source="TextInput:" type="Int64" />
+            <Field name="Source_flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="Source_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="594" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Source_Input]&gt;=[Input]
+AND [Source_Row]&lt;[Row]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Source_Input]&gt;=[Input]
+AND [Source_Row]&lt;[Row]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Source_Input" source="TextInput:" type="Int64" />
+            <Field name="Source_flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="Source_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Source_Input" source="TextInput:" type="Int64" />
+            <Field name="Source_flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="Source_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="690" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Source_Row" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source_Row - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Source_Input" source="TextInput:" type="Int64" />
+            <Field name="Source_flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="Source_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="978" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Row" selected="False" />
+            <SelectField field="Source_Row" selected="True" rename="Row" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="flag" selected="True" />
+            <SelectField field="fileId" selected="True" />
+            <SelectField field="Max_fileId" selected="True" />
+            <SelectField field="Source_Input" selected="False" />
+            <SelectField field="Source_flag" selected="False" />
+            <SelectField field="Source_fileId" selected="False" />
+            <SelectField field="Source_Max_fileId" selected="False" />
+            <SelectField field="Overlap" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: [Source_Input]-[Input]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="786" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Source_Input" source="TextInput:" type="Int64" />
+            <Field name="Source_flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="Source_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="882" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Source_Input]-[Input]" field="Overlap" size="4" type="Int32" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Overlap = [Source_Input]-[Input]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Source_Input" source="TextInput:" type="Int64" />
+            <Field name="Source_flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="Source_fileId" source="TextInput:" type="Int32" />
+            <Field name="Source_Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: [Source_Input]-[Input]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="1266" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>RowCount</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>254</CreateField_Size>
+          <Expression_Init>0</Expression_Init>
+          <Expression_Cond>RowCount &lt;= IF [overlap]&gt;0 THEN 1 ELSE 0 ENDIF</Expression_Cond>
+          <Expression_Loop>RowCount + 1</Expression_Loop>
+          <RecordCount value="2" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="RowCount" source="GenerateRows" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1362" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="If [RowCount]&gt;0 THEN 'Space' ELSE [flag] ENDIF" field="flag" size="15" type="V_String" enabled="true" />
+            <FormulaField expression="IF [flag]='Space' THEN [Overlap] ELSE [Input] ENDIF" field="Input" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="IF [flag]='Space' THEN [Row]+0.001 ELSE [Row] ENDIF" field="Row" size="19.6" type="FixedDecimal" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>flag = If [RowCount]&gt;0 THEN 'Space' ELSE [flag] ENDIF
+Input = IF [flag]='Space' ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="Formula: IF [flag]='Space' THEN [Row]+0.001 ELSE [Row] ENDIF" type="FixedDecimal" />
+            <Field name="Input" source="Formula: IF [flag]='Space' THEN [Overlap] ELSE [Input] ENDIF" type="Int64" />
+            <Field name="flag" size="15" source="Formula: If [RowCount]&gt;0 THEN 'Space' ELSE [flag] ENDIF" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="RowCount" source="GenerateRows" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1458" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Overlap" selected="False" />
+            <SelectField field="RowCount" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="Formula: IF [flag]='Space' THEN [Row]+0.001 ELSE [Row] ENDIF" type="FixedDecimal" />
+            <Field name="Input" source="Formula: IF [flag]='Space' THEN [Overlap] ELSE [Input] ENDIF" type="Int64" />
+            <Field name="flag" size="15" source="Formula: If [RowCount]&gt;0 THEN 'Space' ELSE [flag] ENDIF" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1074" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Row" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Row" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Row" selected="True" rename="Right_Row" input="Right_" />
+                <SelectField field="Right_Input" selected="True" rename="Right_Input" input="Right_" />
+                <SelectField field="Right_flag" selected="True" rename="Right_flag" input="Right_" />
+                <SelectField field="Right_fileId" selected="True" rename="Right_fileId" input="Right_" />
+                <SelectField field="Right_Max_fileId" selected="True" rename="Right_Max_fileId" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: [Source_Input]-[Input]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: [Source_Input]-[Input]" type="Int32" />
+            <Field name="Right_Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Right_Input" source="TextInput:" type="Int64" />
+            <Field name="Right_flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="Right_fileId" source="TextInput:" type="Int32" />
+            <Field name="Right_Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1554" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="(Multiple Sources)" type="FixedDecimal" />
+            <Field name="Input" source="(Multiple Sources)" type="Int64" />
+            <Field name="flag" size="15" source="(Multiple Sources)" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1938" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iterative</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="558" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1650" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="(Multiple Sources)" type="FixedDecimal" />
+            <Field name="Input" source="(Multiple Sources)" type="Int64" />
+            <Field name="flag" size="15" source="(Multiple Sources)" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1746" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-16 17:39:06</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-12-16 17:39:06</StartDate>
+              <EndDate>2024-12-16 17:39:06</EndDate>
+              <Operand>0</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] &gt; 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="(Multiple Sources)" type="FixedDecimal" />
+            <Field name="Input" source="(Multiple Sources)" type="Int64" />
+            <Field name="flag" size="15" source="(Multiple Sources)" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="(Multiple Sources)" type="FixedDecimal" />
+            <Field name="Input" source="(Multiple Sources)" type="Int64" />
+            <Field name="flag" size="15" source="(Multiple Sources)" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1842" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Count" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="(Multiple Sources)" type="FixedDecimal" />
+            <Field name="Input" source="(Multiple Sources)" type="Int64" />
+            <Field name="flag" size="15" source="(Multiple Sources)" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1938" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output24</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Row" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="Input" selected="True" type="Int64" size="8" />
+            <SelectField field="flag" selected="True" type="V_String" forced="True" size="15" />
+            <SelectField field="fileId" selected="True" type="Int32" forced="True" size="4" />
+            <SelectField field="Max_fileId" selected="True" type="Int32" forced="True" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="750" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="Overlap" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Overlap = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1074" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: (Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1170" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Overlap" source="Formula: (Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1722" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]+1" field="Batch" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Batch = [Engine.IterationNumber]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="(Multiple Sources)" type="FixedDecimal" />
+            <Field name="Input" source="(Multiple Sources)" type="Int64" />
+            <Field name="flag" size="15" source="(Multiple Sources)" type="V_String" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="Batch" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="978" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="flag" selected="False" />
+            <SelectField field="Source_Row" selected="False" />
+            <SelectField field="Source_Input" selected="False" />
+            <SelectField field="Source_flag" selected="True" rename="flag" />
+            <SelectField field="Source_fileId" selected="False" />
+            <SelectField field="Source_Max_fileId" selected="False" />
+            <SelectField field="Overlap" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" scale="6" size="19" source="TextInput:" type="FixedDecimal" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="fileId" source="TextInput:" type="Int32" />
+            <Field name="Max_fileId" source="TextInput:" type="Int32" />
+            <Field name="flag" size="15" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="False" />
+      <Destination ToolID="5" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="5" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="False" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="4" Connection="False" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="16" Connection="Right" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="19" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="20" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output9" />
+      <Destination ToolID="20" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="False" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day 9 macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ddaf8926-4a2b-4eb7-827d-23166ebc77dd" />
+      <Telemetry>
+        <PreviousWorkflowId value="fb5d0b1a-02d4-49f0-a5c2-ae943a6dfc98" />
+        <OriginWorkflowId value="fb5d0b1a-02d4-49f0-a5c2-ae943a6dfc98" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (18)</Name>
+              <ToolId value="18" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (24)</Name>
+              <ToolId value="24" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>iterative</Input>
+        <Output>iterative</Output>
+        <IterationLimit value="99999" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
